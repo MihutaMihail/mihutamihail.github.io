@@ -9,20 +9,20 @@ body {
 /* */
 
 header {
-    background-color : #333;
-    color : white;
+    background-color : white;
+    color : black;
     padding : 10px;
 }
 
 .header-info {
-    width : 95%;
+    width : 70%;
     margin : 0 auto;
     display : flex;
     justify-content : space-between;
     align-items : center;
 }
 
-h1 {
+.header-info h1 {
     float : left;
     margin : 0;
     font-size : 25px;
@@ -32,11 +32,10 @@ h1 {
 
 a {
     text-decoration : none;
-    font-weight : bold;
 }
 
 a:visited {
-    color : #ffcc00;
+    color : #0084ff;
 }
 
 /* Button */
@@ -46,18 +45,13 @@ a:visited {
     padding : 10px 20px;
     text-align : center;
     text-decoration : none;
-    color : #333;
+    color : white;
     font-weight : bold;
     font-size : 15px;
-    background-color : white;
+    background-color : #0084ff;
     cursor : pointer;
     border-radius : 10px;
     margin : 5px;
-}
-
-.btn:hover {
-    background-color : #333;
-    color : white;
 }
 
 .authentification {
@@ -69,48 +63,87 @@ a:visited {
 /* */
 
 .navbar {
-    width: 95%;
-    margin: 0 auto;
-    color: white;
-    padding: 10px;
+    width : 70%;
+    margin : 0 auto;
+    padding : 10px;
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style : none;
+    margin : 0;
+    padding : 0;
 }
 
 .navbar li {
-    display: inline;
-    margin-right: 20px;
+    display : inline;
+    margin-right : 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    text-decoration : none;
+    color : black;
     font-size : 20px;
 }
 
 .navbar a:hover {
-    color: #ffcc00;
+    color : #0084ff;
 }
 
 /* */
-/* Content Area - Book Flights */
+/* Container - Book Flights */
+/* */ 
 
-/* */
-
-.content-area {
-    background-color: #cecece;
-    padding: 50px;
+#booking-section {
+    background: url('assets/voyage.jpg') center/cover no-repeat;
+    padding-top : 100px;
+    padding-bottom: 200px;
+    text-align: center;
+    color: #333;
 }
 
-.container-with-border {
-    padding: 100px;
-    border-radius: 7px;
-    text-align : center;
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form label,
+#booking-form select,
+#booking-form input,
+#booking-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#booking-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#booking-form select,
+#booking-form input {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#booking-form button {
+    background-color: #0084ff;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#booking-form button:hover {
+    background-color: #0065cc; /* Darker shade on hover */
 }
 
 /* */
@@ -118,7 +151,7 @@ a:visited {
 /* */
 
 footer {
-    background-color: #333;
+    background-color: #888888;
     color: white;
     padding: 10px;
     position: fixed;
