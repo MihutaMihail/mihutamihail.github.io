@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin : 0;
-    padding : 0;
-    font-family : 'Arial'; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial'; 
 }
 
 /* */
@@ -9,53 +13,32 @@ body {
 /* */
 
 header {
-    background-color : white;
-    color : black;
-    padding : 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
 }
 
 .header-info {
-    width : 70%;
-    margin : 0 auto;
-    display : flex;
-    justify-content : space-between;
-    align-items : center;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-info h1 {
-    float : left;
-    margin : 0;
-    font-size : 25px;
+    margin: 0;
+    font-size: 25px;
 }
 
 /* Link */
 
 a {
-    text-decoration : none;
+    text-decoration: none;
 }
 
 a:visited {
-    color : #0084ff;
-}
-
-/* Button */
-
-.btn {
-    display : inline-block;
-    padding : 10px 20px;
-    text-align : center;
-    text-decoration : none;
-    color : white;
-    font-weight : bold;
-    font-size : 15px;
-    background-color : #0084ff;
-    cursor : pointer;
-    border-radius : 10px;
-    margin : 5px;
-}
-
-.authentification {
-    float : right;
+    color: #0084ff;
 }
 
 /* */
@@ -63,30 +46,30 @@ a:visited {
 /* */
 
 .navbar {
-    width : 70%;
-    margin : 0 auto;
-    padding : 10px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .navbar ul {
-    list-style : none;
-    margin : 0;
-    padding : 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar li {
-    display : inline;
-    margin-right : 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 .navbar a {
-    text-decoration : none;
-    color : black;
-    font-size : 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 .navbar a:hover {
-    color : #0084ff;
+    color: #0084ff;
 }
 
 /* */
@@ -95,68 +78,84 @@ a:visited {
 
 #booking-section {
     background: url('assets/voyage.jpg') center/cover no-repeat;
-    padding-top : 100px;
-    padding-bottom: 200px;
+    padding-top: 10%;
+    padding-bottom: 15%;
     text-align: center;
-    color: #333;
 }
 
 #booking-form {
-    max-width: 600px;
+    width: 80%;
     margin: 0 auto;
-    background-color: #fff;
+    display: inline-block;
+    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
-#booking-form label,
 #booking-form select,
 #booking-form input,
 #booking-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
+    font-size: 25px;
+    padding: 5px;
+    border: 1px solid black;
+}
+ 
+#booking-form select {
+    width: calc(30% - 10px);
 }
 
-#booking-form label {
-    text-align: left;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-#booking-form select,
-#booking-form input {
-    padding: 10px;
-    box-sizing: border-box;
+#booking-form input,
+#booking-form button {
+    width: calc(20% - 10px);
 }
 
 #booking-form button {
     background-color: #0084ff;
     color: white;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 #booking-form button:hover {
-    background-color: #0065cc; /* Darker shade on hover */
+    background-color: #0065cc;
 }
+
+/* */
+/* Container - Other Locations   */
+/* */ 
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.element {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.element img {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+}
+
 
 /* */
 /* Footer */
 /* */
 
 footer {
-    background-color: #888888;
+    background-color: #2a2a2a;
     color: white;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    text-align : center;
-    font-size : 12px;
+    text-align: center;
+    font-size: 12px;
 }

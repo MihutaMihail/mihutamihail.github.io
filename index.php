@@ -9,5 +9,6 @@
   <body>
     <?php include('view/header.php') ?>
     <?php include('view/bookFlights.php') ?>
+    <?php include('view/otherLocations.php') ?>
 
 <?php include('view/footer.php') ?>

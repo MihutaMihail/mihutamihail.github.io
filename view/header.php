@@ -10,10 +10,5 @@
             <li><a href="#">Contact</a></li> 
             </ul>
         </div>
-
-        <!--<nav class="authentification">
-            <button class="btn">Register</button>
-            <button class="btn">Sign In</button>
-        </nav>-->
     </div>
 </header>
