@@ -1,19 +1,18 @@
-<section id="booking-section">
-  <div id="booking-form">
-    <form>
-        <select id="from" name="from" required>
-          <option value="cityA">City A</option>
-          <option value="cityB">City B</option>
-        </select>
-
-        <select id="to" name="to" required> 
-          <option value="cityC">City C</option>
-          <option value="cityD">City D</option>
-        </select>
-
-        <input type="date" id="date" name="date" required>
-
-        <button type="submit">Search</button>
-    </form>
-  </div>
-</section>
+<div class="container pt-10">
+  <form>
+    <div class="row">
+      <div class="col-md-4 p-0">
+        <input type="text" class="form-control rounded-0 form-text" id="departureCity" placeholder="Enter departure city" required>
+      </div>
+      <div class="col-md-4 p-0 rounded-0">
+        <input type="text" class="form-control rounded-0 form-text" id="arrivalCity" placeholder="Enter arrival city" required>
+      </div>
+      <div class="col-md-2 p-0 rounded-0">
+        <input type="date" class="form-control rounded-0 form-text" id="flightDate" required>
+      </div>
+      <div class="col-2 p-0">
+        <button class="btn btn-primary btn-block rounded-0 form-text" id="submitBtn" type="submit">Book Flight</button>
+      </div>
+    </div>
+  </form>
+</div>

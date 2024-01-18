@@ -1,14 +1,30 @@
-<header>
-    <div class="header-info">
-        <h1><a href="/accessibility_class/">BookingFlights.com</a></h1>
-
-        <div class="navbar">
-            <ul>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Hotels</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li> 
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-4 logo-navbar" href="#">BookingFlights</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">Trains</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">Destination</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-navbar" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-</header>
+  </div>
+</nav>
