@@ -795,7 +795,6 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(21, 21, 21, 0.6);
   position: absolute;
   left: 0;
   right: 0;
@@ -827,18 +826,20 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
   font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
   font-style: italic;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
