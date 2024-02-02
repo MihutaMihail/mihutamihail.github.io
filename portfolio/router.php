@@ -7,6 +7,9 @@ class Router {
         $this->addRoute('', function() {
             include('views/home.php');
         });
+        $this->addRoute('home', function() {
+            include('views/home.php');
+        });
         
         $this->addRoute('projects', function() {
             include('views/projects.php');
