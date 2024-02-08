@@ -1,9 +1,9 @@
 {
     "language": "Language",
-    "skills": "Skills",
-    "projects": "Projects",
-    "experiences": "Experiences",
-    "contact": "Contact",
+    "navbar-skills": "Skills",
+    "navbar-projects": "Projects",
+    "navbar-experiences": "Experiences",
+    "navbar-contact": "Contact",
     "about-me": "About me",
     "about-me-message": "Currently in my second year (BAC+2) of computer science, my goal is to strengthen my skills in this field. Starting from next year, I will focus on game development.",
     "looking-for": "Looking for",

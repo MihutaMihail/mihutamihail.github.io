@@ -1,9 +1,9 @@
 {
     "language": "Langue",
-    "skills": "Compétences",
-    "projects": "Projets",
-    "experiences": "Expériences",
-    "contact": "Contact",
+    "navbar-skills": "Compétences",
+    "navbar-projects": "Projets",
+    "navbar-experiences": "Expériences",
+    "navbar-contact": "Contacter",
     "about-me": "À propos de moi",
     "about-me-message": "Actuellement en deuxième année (BAC+2) d'informatique, mon objectif est de renforcer mes compétences dans ce domaine. À partir de l'année prochaine, je me concentrerai sur le développement de jeux.",
     "looking-for": "Recherche",
