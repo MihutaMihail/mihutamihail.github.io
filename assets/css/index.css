@@ -42,9 +42,9 @@ h2 {
   background-color: white !important;
 }
 
-.dropdown-menu[data-bs-popper] {
+.dropdown-menu {
   background: #151515 !important;
-  border: solid white 2px;
+  border: solid white 2px !important;
 }
 
 /*--------------------------------------------------------------
