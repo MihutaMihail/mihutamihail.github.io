@@ -46,10 +46,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link scrollto active" href="#introduction">Introduction</a></li>
-                <li class="nav-item"><a class="nav-link scrollto active" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link scrollto active" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link scrollto active" href="#experiences">Experiences</a></li>
-                <li class="nav-item"><a class="nav-link scrollto active" href="#contact">Contact</a></li>
+                <li class="nav-item"><a id="skills" class="nav-link scrollto active language-dependent" href="#skills">Skills</a></li>
+                <li class="nav-item"><a id="projects" class="nav-link scrollto active language-dependent" href="#projects">Projects</a></li>
+                <li class="nav-item"><a id="experiences" class="nav-link scrollto active language-dependent" href="#experiences">Experiences</a></li>
+                <li class="nav-item"><a id="contact" class="nav-link scrollto active language-dependent" href="#contact">Contact</a></li>
+
+                <!-- Language toggle buttons -->
+                <li class="nav-item dropdown">
+                  <a id="language" class="nav-link dropdown-toggle language-dependent" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Language
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><button class="nav-link btn btn-link" onclick="changeLanguage('en')">English</button></li>
+                    <li><button class="nav-link btn btn-link" onclick="changeLanguage('fr')">Français</button></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -76,16 +87,16 @@
       
         <div class="col-md-6 order-md-2">
           <div class="text-wrap">
-            <h2>About me</h2>
-            <p>
+            <h2 id="about-me" class="language-dependent">About me</h2>
+            <p id="about-me-message" class="language-dependent">
               Currently in my second year (BAC+2) of computer science, my goal is to strengthen my skills in this field. 
               Starting from next year, I will focus on game development.
             </p>
           </div>
       
           <div class="text-wrap">
-            <h2>Looking for</h2>
-            <p>
+            <h2 id="looking-for" class="language-dependent">Looking for</h2>
+            <p id="looking-for-message" class="language-dependent">
               I am looking for an internship in development, preferably in the video game industry, but I am open to other opportunities, 
               with a duration of either 6 weeks or 12 weeks (part-time). Ideally, I would be available to start the internship towards the end of 
               the school year, around May 20th.
@@ -102,7 +113,7 @@
     <div class="container">
       
       <div class="section-title">
-        <h2>Skills</h2>
+        <h2 id="skills" class="language-dependent">Skills</h2>
       </div>
 
       <div class="row">
@@ -110,7 +121,7 @@
       <!-- Programming Languages -->
       <div class="col-md-6 col-12 mb-4">
         <div class="grid-container">
-          <h2>Programming Languages</h2>
+          <h2 id="programming-languages" class="language-dependent">Programming Languages</h2>
           <div class="row"> 
             <div class="grid-item col-6">
               C#
@@ -158,9 +169,9 @@
       <!-- Languages -->
       <div class="col-md-6 col-12 mb-4">
         <div class="grid-container">
-          <h2>Languages</h2>
+          <h2 id="languages" class="language-dependent">Languages</h2>
           <div class="row">
-            <div class="grid-item col-6">
+            <div id="skills-english" class="grid-item col-6 language-dependent">
               English
             </div>
             <div class="grid-item col-6">
@@ -168,7 +179,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="grid-item col-6">
+            <div id="skills-french" class="grid-item col-6 language-dependent">
               French
             </div>
             <div class="grid-item col-6">
@@ -196,7 +207,7 @@
         <!-- Development -->
         <div class="col-md-6 col-12 mb-4">
           <div class="grid-container">
-            <h2>Development</h2>
+            <h2 id="game-development" class="language-dependent">Game Development</h2>
             <div class="row">
               <div class="grid-item col-6">
                 Unreal Engine Blueprint
@@ -219,7 +230,7 @@
         <!-- Operating Systems -->
         <div class="col-md-6 col-12">
           <div class="grid-container">
-            <h2>Operating Systems</h2>
+            <h2 id="operating-systems" class="language-dependent">Operating Systems</h2>
             <div class="row">
               <div class="grid-item col-6">
                 Bash
@@ -240,7 +251,7 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Projects</h2>
+        <h2 id="projects" class="language-dependent">Projects</h2>
       </div>
 
       <!-- First Project -->
@@ -252,10 +263,10 @@
               <div class="card-header mb-2 h6">
                 Platformer
               </div>
-              <p class="card-text">A platfomer game made with Unity. Goal is to pass each challenge that is presented until you reach the end.</p>
+              <p id="projects-platformer" class="card-text language-dependent">A platfomer game made with Unity. Goal is to pass each challenge that is presented until you reach the end.</p>
               <div class="text-center">
-                <a href="https://www.youtube.com/watch?v=SfqUuGNmkmY" class="btn btn-dark m-1" target="_blank">Watch on YouTube</a>
-                <a href="https://github.com/MihutaMihail/Unity-v2021.3.16_Platformer" class="btn btn-secondary m-1" target="_blank">GitHub Repository</a>
+                <a id="watch-on-youtube" href="https://www.youtube.com/watch?v=SfqUuGNmkmY" class="btn btn-dark m-1 language-dependent" target="_blank">Watch on YouTube</a>
+                <a id="github-repository" href="https://github.com/MihutaMihail/Unity-v2021.3.16_Platformer" class="btn btn-secondary m-1 language-dependent" target="_blank">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -269,10 +280,10 @@
               <div class="card-header mb-2 h6">
                 Kingdom Panic
               </div>
-              <p class="card-text">A game made with Unreal Engine. It's a tower defense where the goal is to place towers as to defend against the enemy.</p>
+              <p id="projects-kingdom-panic" class="card-text language-dependent">A game made with Unreal Engine. It's a tower defense where the goal is to place towers as to defend against the enemy.</p>
               <div class="text-center">
-                <a href="https://www.youtube.com/watch?v=ghjP0xtL4sI" class="btn btn-dark m-1" target="_blank">Watch on YouTube</a>
-                <a href="https://github.com/MihutaMihail/Unreal-v5.1_KingdomPanic" class="btn btn-secondary m-1" target="_blank">GitHub Repository</a>
+                <a id="watch-on-youtube" href="https://www.youtube.com/watch?v=ghjP0xtL4sI" class="btn btn-dark m-1 language-dependent" target="_blank">Watch on YouTube</a>
+                <a id="github-repository" href="https://github.com/MihutaMihail/Unreal-v5.1_KingdomPanic" class="btn btn-secondary m-1 language-dependent" target="_blank">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -286,10 +297,10 @@
               <div class="card-header mb-2 h6">
                 Pacman
               </div>
-              <p class="card-text">An attempt of the game Pacman using javascript.</p>
+              <p id="projects-pacman" class="card-text language-dependent">An attempt of the game Pacman using javascript.</p>
               <div class="text-center">
-                <a href="https://www.youtube.com/watch?v=DcCmeYA6cZ0" class="btn btn-dark m-1" target="_blank">Watch on YouTube</a>
-                <a href="https://github.com/MihutaMihail/pacman" class="btn btn-secondary m-1" target="_blank">GitHub Repository</a>
+                <a id="watch-on-youtube" href="https://www.youtube.com/watch?v=DcCmeYA6cZ0" class="btn btn-dark m-1 language-dependent" target="_blank">Watch on YouTube</a>
+                <a id="github-repository" href="https://github.com/MihutaMihail/pacman" class="btn btn-secondary m-1 language-dependent" target="_blank">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -303,10 +314,10 @@
               <div class="card-header mb-2 h6">
                 Groupie Tracker
               </div>
-              <p class="card-text">Use of the groupie-tracker API to create an app with golang.</p>
+              <p id="projects-groupie-tracker" class="card-text language-dependent">Use of the groupie-tracker API to create an app with golang.</p>
               <div class="text-center">
-                <a href="https://www.youtube.com/watch?v=fn6k69TmOL0" class="btn btn-dark m-1" target="_blank">Watch on YouTube</a>
-                <a href="https://github.com/MihutaMihail/groupie_tracker" class="btn btn-secondary m-1" target="_blank">GitHub Repository</a>
+                <a id="watch-on-youtube" href="https://www.youtube.com/watch?v=fn6k69TmOL0" class="btn btn-dark m-1 language-dependent" target="_blank">Watch on YouTube</a>
+                <a id="github-repository" href="https://github.com/MihutaMihail/groupie_tracker" class="btn btn-secondary m-1 language-dependent" target="_blank">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -314,7 +325,14 @@
       </div> <!--End Fourth Project-->
 
       <div class="text-center">
-        <h2 class="pt-3">If you want to see all my projects, check out my <a href="https://github.com/MihutaMihail" target="_blank" class="text-secondary">Github</a></h2>
+        <div class="text-center">
+          <h2 id="projects-message" class="pt-3 language-dependent">
+            If you want to see all my projects, check out my 
+          </h2>
+          <h2>
+            <a href="https://github.com/MihutaMihail" target="_blank" class="text-secondary">GitHub</a>
+          </h2>
+        </div>
       </div>
 
     </div>
@@ -325,7 +343,7 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Experiences</h2>
+        <h2 id="experiences" class="language-dependent">Experiences</h2>
       </div>
 
       <div class="row">
@@ -333,29 +351,46 @@
         <div class="col-md-6">
           <div class="card mb-4">
             <div class="card-body">
-              <h2 class="card-title">Educational Project - YDAYS</h2>
-              <p class="card-text"><strong>Tower Defense Game in Unreal Engine</strong></p>
-              <p class="card-text"><strong>Duration:</strong> October 2022 - May 2023 | <strong>Duration:</strong> 7 Months | <strong>Format:</strong> In-Person</p>
+              <h2 id="experience-1-name" class="card-title language-dependent">Educational Project - YDAYS</h2>
               <p class="card-text">
+                <strong class="language-dependent" id="experience-1-title">Tower Defense Game in Unreal Engine</strong>
+              </p>
+              <p class="card-text">
+                <strong id="experience-duration" class="language-dependent" >Duration:</strong>
+                <span id="experience-1-duration" class="language-dependent"> October 2022 - May 2023 | </span>
+                <strong>Format:</strong>
+                <span id="experience-in-person" class="language-dependent"> In-Person</span>
+              </p>
+              <p id="experience-1-content" class="card-text language-dependent">
                 I actively contributed to the development of a Tower Defense game using Blueprints. The project spanned seven months, involving regular bi-weekly team meetings to ensure project alignment. My role included effective remote project management, fostering optimal progress throughout the development process.
               </p>
             </div>
           </div>
-        </div> <!-- End Experience 1 -->
+        </div>
+        <!-- End Experience 1 -->
 
         <!-- Experience 2 -->
         <div class="col-md-6">
           <div class="card mb-4">
             <div class="card-body">
-              <h2 class="card-title">Internship at LesBaleries' Association</h2>
-              <p class="card-text"><strong>Website Development with WordPress</strong></p>
-              <p class="card-text"><strong>Duration:</strong> April 2022 - May 2022 | <strong>Duration:</strong> 6 Weeks | <strong>Format:</strong> Remote</p>
+              <h2 id="experience-2-name" class="card-title language-dependent">Internship at LesBaleries' Association</h2>
               <p class="card-text">
+                <strong class="language-dependent" id="experience-2-title">Website Development with WordPress</strong>
+              </p>
+              <p class="card-text">
+                <strong id="experience-duration" class="language-dependent" >Duration:</strong>
+                <span id="experience-2-duration" class="language-dependent"> April 2022 - May 2022 | </span>
+                <strong>Format:</strong>
+                <span id="experience-remote" class="language-dependent"> Remote</span>
+              </p>
+              <p id="experience-2-content" class="card-text language-dependent">
                 During my internship with LesBaleries' association, I collaborated within a team to develop a WordPress website. Over the course of six weeks, I worked remotely, utilizing SQL for database management and executing necessary queries. Additionally, I adapted the code to accommodate various extensions used in the project.
               </p>
             </div>
           </div>
-        </div> <!-- End Experience 2 -->
+        </div>
+        <!-- End Experience 2 -->
+
       </div>
     </div>
   </section> <!-- End Experiences -->
@@ -365,10 +400,10 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Contact</h2>
+        <h2 id="contact" class="language-dependent">Contact</h2>
       </div>
 
-      <p>To note, the contact form will not send any message to my actual email address.</p>
+      <p id="contact-note" class="language-dependent">To note, the contact form will not send any message to my actual email address.</p>
 
       <div class="row mt-5">
 
@@ -384,7 +419,7 @@
           </div>
 
           <div>
-            <h4>Call</h4>
+            <h4 id="call" class="language-dependent">Call</h4>
             <p>06 60 53 40 79</p>
           </div>
         </div>
@@ -393,19 +428,19 @@
           <form action="#contact" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control language-dependent" id="name" placeholder="Your Name" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control language-dependent" name="email" id="email" placeholder="Your Email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control language-dependent" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
-            <div class="text-center mt-3"><button type="submit" class="btn btn-secondary">Send Message</button></div>
+            <div class="text-center mt-3"><button id="form-submit" type="submit" class="btn btn-secondary language-dependent">Send Message</button></div>
           </form>
         </div>
       </div>
@@ -424,7 +459,7 @@
               <p>
                 03 rue François Truffaut <br>
                 95220 Herblay<br><br>
-                <strong>Phone:</strong> 06 60 53 40 79<br>
+                <strong id="contact-phone" class="language-dependent">Phone:</strong> 06 60 53 40 79<br>
                 <strong>Email:</strong> mihutamihail95@gmail.com<br>
               </p>
               <div class="social-links mt-3">
@@ -438,9 +473,9 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#introduction">Introduction</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#skills">Skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#projects">Projects</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#experiences">Experiences</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a id="skills" class="language-dependent" href="#skills">Skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a id="projects" class="language-dependent" href="#projects">Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a id="experiences" class="language-dependent"href="#experiences">Experiences</a></li>
             </ul>
           </div>
 
@@ -456,6 +491,7 @@
 
   <!-- Custom Scripts -->
   <script src="assets/js/sectionOffset.js"></script>
+  <script src="assets/js/changeLanguage.js"></script>
 
 </body>
 

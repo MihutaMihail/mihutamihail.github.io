@@ -2,7 +2,7 @@
 $(document).ready(function() {
     // Get all anchor <a> elements + add click event handler
     $("a").on('click', function(event) {
-        /*
+        /**
         * Check if <a> element has a 'hash' (URL fragment identifier)
         * The 'hash' contains the part of the URL that follows the '#' symbol
         */
