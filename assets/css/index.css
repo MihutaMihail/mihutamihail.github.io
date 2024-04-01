@@ -42,9 +42,20 @@ h2 {
   background-color: white !important;
 }
 
-.dropdown-menu {
-  background: #151515 !important;
-  border: solid white 2px !important;
+.language-button {
+  width: 40px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  padding: 0;
+}
+
+.btn.dropdown-toggle {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 
 /*--------------------------------------------------------------
@@ -110,7 +121,7 @@ section {
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.stars,
+/*.stars,
 .empty-stars {
   font-size: 18px;
   vertical-align: middle;
@@ -123,6 +134,12 @@ section {
 
 .empty-stars {
   color: #d3d3d3;
+}*/
+
+.square-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
 }
 
 /*--------------------------------------------------------------
