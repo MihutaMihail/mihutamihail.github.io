@@ -1,9 +1,24 @@
-// Change website text based on the chosen language
-function changeLanguage(lang, event) {
+/**
+ * Update text based on the chosen language.
+ *
+ * This function dynamically changes the content of the website by fetching text data
+ * from a specified JSON file based on the selected language. It updates all elements
+ * with the class `language-dependent` to display the corresponding translated text
+ * from the JSON file. Additionally, it changes the displayed flag icon to match the selected language.
+ *
+ * @param {string} lang - The selected language code, either "en" for English or "fr" for French.
+ * @param {Event} event - The event object triggered by the language selection, used to prevent the default action.
+ * @param {string} pageType - Specifies the type of content being loaded, such as "cv" or "blog".
+ *                            This determines the path to the appropriate JSON file for the selected language.
+ *
+ *
+ * @throws Will log an error message to the console if fetching or parsing the JSON fails.
+ */
+function changeLanguage(lang, event, pageType) {
   const contentPath =
     lang === "en"
-      ? "assets/json/english-content.json"
-      : "assets/json/french-content.json";
+      ? `assets/json/${pageType}/english-content.json`
+      : `assets/json/${pageType}/french-content.json`;
 
   /**
    * Chaining methods with the dot notation is a way to handle asynchronous operations.

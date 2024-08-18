@@ -1,4 +1,6 @@
-// Smooth scrolling and offset for navbar links
+/**
+ * Smooth scrolling and offset for navbar links
+ */
 $(document).ready(function() {
     // Get all anchor <a> elements + add click event handler
     $("a").on('click', function(event) {
@@ -8,7 +10,7 @@ $(document).ready(function() {
         */
         if (this.hash !== "") {
             event.preventDefault();
-            
+                
             // Animate scrolling animation
             $('html, body').animate({
                 // Set 'scrollTop' property to desired value
