@@ -104,4 +104,6 @@ This section will explain how to start the development server of development pur
     ```bash
     npm run deploy
     ```
+
+    **To note: there's no need to manually push the changes.**
     
