@@ -2,7 +2,7 @@
 # GENERAL
 ==================================================*/
 body {
-  margin: 0;
+  margin: 0 !;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Poppins", sans-serif;
@@ -43,4 +43,15 @@ section {
   display: inline-block;
   background: black;
   margin: 8px 10px;
+}
+
+@media (max-width: 375px) {
+  .section-title h2 {
+    font-size: 23px;
+  }
+    
+  .section-title h2::after {
+    margin: 6px 5px;
+    width: 90px;
+  }
 }

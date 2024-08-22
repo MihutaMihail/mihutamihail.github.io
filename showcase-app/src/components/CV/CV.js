@@ -1,11 +1,15 @@
 import React from "react";
 import "./CV.css";
+import Experiences from "./Experiences/Experiences"
+import Projects from "./Projects/Projects"
+import Skills from "./Skills/Skills"
 
 const CV = () => {
   return (
     <div className="cv">
-      <h1>CV Page</h1>
-      <p>Welcome to my CV page!</p>
+      <Experiences />
+      <Projects />
+      <Skills />
     </div>
   );
 };
