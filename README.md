@@ -1,1 +1,1 @@
-## The point of this repository is to showcase my CV but web version while also getting some practice with bootstrap primarily, but also html / css since I don't do a lot of it plus some js because why not.
+## Showcase of my CV and Blog
