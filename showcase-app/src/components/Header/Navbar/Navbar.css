@@ -1,27 +1,27 @@
-#header {
-  position: fixed;  
+#nav {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
 }
 
-header .navbar {
-  background-color: #333 !important;
+nav .navbar {
+  background-color: #292929 !important;
   margin-bottom: 30px;
 }
 
-header .navbar-nav .nav-link {
+nav .navbar-nav .nav-link {
   color: #ccc;
   font-size: 19px;
 }
 
-header .navbar-nav .nav-link:hover,
-header .navbar-nav .nav-link.active  {
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link.active {
   color: white;
 }
 
-header .language-button {
+nav .language-button {
   width: 40px;
   height: 30px;
   background-size: cover;
@@ -30,7 +30,7 @@ header .language-button {
   padding: 0;
 }
 
-header .btn.dropdown-toggle {
+nav .btn.dropdown-toggle {
   box-shadow: none;
   outline: none;
   background-color: transparent !important;

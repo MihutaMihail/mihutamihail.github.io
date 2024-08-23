@@ -1,0 +1,54 @@
+.open-arrow {
+  position: fixed;
+  top: 4%;
+  left: 1.5%;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.close-arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar-content a:hover {
+  background-color: #575757;
+}
