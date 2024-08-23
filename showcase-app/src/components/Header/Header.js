@@ -31,7 +31,7 @@ const Header = () => {
                     <li className="nav-item">
                       <NavLink
                         to="/"
-                        className="nav-link language-dependent"
+                        className="nav-link"
                         activeclassname="active"
                       >
                         CV
@@ -43,7 +43,7 @@ const Header = () => {
                     <li className="nav-item">
                       <NavLink
                         to="/blog"
-                        className="nav-link language-dependent"
+                        className="nav-link"
                         activeclassname="active"
                       >
                         Blog

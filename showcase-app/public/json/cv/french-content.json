@@ -26,7 +26,7 @@
 
     "experience-1-name": "E-commerce",
     "experience-1-title": "Projet d'apprentissage",
-    "experience-1-duration": "15 janvier 2024 - 16 février 2024",
+    "experience-1-duration": "15 Janvier 2024 - 16 Février 2024",
     "experience-1-description": "Création d'un site e-commerce où les utilisateurs peuvent vendre des produits.",
     "experience-1-design-item-1": "Conception du système d'authentification",
     "experience-1-design-item-2": "Conception des fonctionnalités utilisateur",
@@ -36,7 +36,7 @@
 
     "experience-2-name": "API",
     "experience-2-title": "Projet d'apprentissage",
-    "experience-2-duration": "21 novembre 2023 - 14 janvier 2024",
+    "experience-2-duration": "21 Novembre 2023 - 14 Janvier 2024",
     "experience-2-description": "Création d'une API pour gérer les opérations CRUD pour les utilisateurs et leurs produits",
     "experience-2-design-item-1": "Conception des contrôleurs",
     "experience-2-design-item-2": "Conception des services",
@@ -47,7 +47,7 @@
     
     "experience-3-name": "Tower Defense",
     "experience-3-title": "Projet d'apprentissage",
-    "experience-3-duration": "octobre 2022 - mai 2023",
+    "experience-3-duration": "Octobre 2022 - Mai 2023",
     "experience-3-description": "Création d'un jeu Tower Defense dans Unreal Engine en utilisant les blueprints. L'objectif est de protéger le château en plaçant des tours pour vaincre les ennemis.",
     "experience-3-design-item-1": "Conception des mécaniques de tir des tours",
     "experience-3-design-item-2": "Conception du système de placement des tours",
@@ -57,7 +57,7 @@
     
     "experience-4-name": "Site Web Wordpress",
     "experience-4-title": "Stage",
-    "experience-4-duration": "avril 2022 - mai 2022",
+    "experience-4-duration": "Avril 2022 - Mai 2022",
     "experience-4-description": "Création d'un site Web pour une association appelée LesBaleries' en utilisant Wordpress. L'objectif est d'avoir un site Web fonctionnel pour ses clients.",
     "experience-4-design-item-1": "Conception de la base de données",
     "experience-4-design-item-2": "Conception des fonctionnalités de la page d'administrateurs",

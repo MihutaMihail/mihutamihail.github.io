@@ -17,8 +17,8 @@
 export function changeLanguage(lang, event, pageType) {
   const contentPath =
     lang === "en"
-      ? `assets/json/${pageType}/english-content.json`
-      : `assets/json/${pageType}/french-content.json`;
+      ? `./json/${pageType}/english-content.json`
+      : `./json/${pageType}/french-content.json`;
 
   /**
    * Chaining methods with the dot notation is a way to handle asynchronous operations.
