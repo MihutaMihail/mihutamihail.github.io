@@ -4,6 +4,8 @@
     "nav-blog": "BLOG",
     "nav-projects": "Projects",
     "nav-experiences": "Experiences",
+    "nav-about": "About",
+    "nav-contact": "Contact",
     "looking-for": "Looking for",
     "looking-for-message": "I am looking for an apprenticeship in development, preferably in the video game sector, but I am open to other opportunities.",
     "contract": "Contract Type → 3-year apprenticeship contract",
@@ -68,5 +70,10 @@
     "experience-design": "Design",
 
     "contact-phone": "Phone:",
-    "useful-links": "Useful Links"
+    "useful-links": "Useful Links",
+
+    "contact-right-header": "Get in touch",
+    "contact-right-text": "If you have any questions or would like to reach out, feel free to fill out the form. (NOT WORKING CURRENTLY)",
+    "contact-left-name": "Name",
+    "contact-left-button-text": "Submit"
 }
