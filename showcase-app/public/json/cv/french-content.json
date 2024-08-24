@@ -4,6 +4,8 @@
     "nav-blog": "BLOG",
     "nav-projects": "Projets",
     "nav-experiences": "Expériences",
+    "nav-about": "À propos",
+    "nav-contact": "Contacter",
     "looking-for": "À la recherche de",
     "looking-for-message": "Je suis à la recherche d'une alternance en développement, de préférence dans le secteur des jeux vidéo, mais je suis ouvert à d'autres opportunités.",
     "contract": "Type de contrat → contrat d’apprentissage sur 3 ans",
@@ -68,5 +70,10 @@
     "experience-design": "Conception",
 
     "contact-phone": "Téléphone:",
-    "useful-links": "Liens Utiles"
+    "useful-links": "Liens Utiles",
+
+    "contact-right-header": "Contactez-nous",
+    "contact-right-text": "Si vous avez des questions ou souhaitez nous contacter, n'hésitez pas à remplir le formulaire. (ACTUELLEMENT NON FONCTIONNEL)",
+    "contact-left-name": "Nom",
+    "contact-left-button-text": "Soumettre"
 }

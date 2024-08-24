@@ -27,24 +27,39 @@ const Sidebar = () => {
     <div>
       {!isOpen && (
         <button className="open-arrow" onClick={toggleSidebar}>
-          <i class="fa-solid fa-right-long"></i>
+          <i className="fa-solid fa-right-long"></i>
         </button>
       )}
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         {isOpen && (
           <button className="close-arrow" onClick={toggleSidebar}>
-            <i class="fa-solid fa-left-long"></i>
+            <i className="fa-solid fa-left-long"></i>
           </button>
         )}
         <div className="sidebar-content">
           <ul>
-            <a onClick={handleOptionClick} href="#experiences">
+            <a
+              id="nav-experiences"
+              className="language-dependent"
+              onClick={handleOptionClick}
+              href="#experiences"
+            >
               Experiences
             </a>
-            <a onClick={handleOptionClick} href="#projects">
+            <a
+              id="nav-projects"
+              className="language-dependent"
+              onClick={handleOptionClick}
+              href="#projects"
+            >
               Projects
             </a>
-            <a onClick={handleOptionClick} href="#skills">
+            <a
+              id="nav-skills"
+              className="language-dependent"
+              onClick={handleOptionClick}
+              href="#skills"
+            >
               Skills
             </a>
           </ul>

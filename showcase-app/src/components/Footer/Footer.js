@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="footer-info mb-4">
                 <p>
                   <strong id="contact-phone" className="language-dependent">
-                    Phone:
+                    Phone:&nbsp;
                   </strong>
                   06 60 53 40 79
                   <br />
@@ -23,6 +23,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/in/mihuta-mihail-51b690296"
                     className="twitter"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="bx bxl-linkedin"></i>
                   </a>
@@ -30,6 +31,7 @@ const Footer = () => {
                     href="https://github.com/MihutaMihail"
                     className="facebook"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <i className="bx bxl-github"></i>
                   </a>
@@ -38,11 +40,17 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4 id="useful-links" className="language-dependent">Useful Links</h4>
+              <h4 id="useful-links" className="language-dependent">
+                Useful Links
+              </h4>
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>
-                  <a id="nav-skills" className="language-dependent" href="#skills">
+                  <a
+                    id="nav-skills"
+                    className="language-dependent"
+                    href="#skills"
+                  >
                     Skills
                   </a>
                 </li>

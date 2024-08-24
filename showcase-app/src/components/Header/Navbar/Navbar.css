@@ -6,9 +6,8 @@
   z-index: 100;
 }
 
-nav .navbar {
-  background-color: #292929 !important;
-  margin-bottom: 30px;
+header .navbar {
+  background-color: #151515 !important;
 }
 
 nav .navbar-nav .nav-link {
