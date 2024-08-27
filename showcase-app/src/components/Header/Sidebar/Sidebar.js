@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom';
 import "./Sidebar.css";
 import { smoothScrolling } from "../../../js/smoothScrolling";
 
@@ -23,9 +24,41 @@ const Sidebar = () => {
     setIsOpen(false);
   };
 
+  // Sidebar sections per page
+  const sidebarSections = {
+    "/": [
+      {
+        id: "nav-experiences",
+        className: "language-dependent",
+        onClick: handleOptionClick,
+        href: "#experiences",
+        text: "Experiences",
+      },
+      {
+        id: "nav-projects",
+        className: "language-dependent",
+        onClick: handleOptionClick,
+        href: "#projects",
+        text: "Projects",
+      },
+      {
+        id: "nav-skills",
+        className: "language-dependent",
+        onClick: handleOptionClick,
+        href: "#skills",
+        text: "Skills",
+      },
+    ],
+    "/blog": [],
+  };
+
+  // Get current path (i.e. '/' or '/blog')
+  const location = useLocation();
+  const sections = sidebarSections[location.pathname] || [];
+
   return (
     <div>
-      {!isOpen && (
+      {!isOpen && sections.length > 0 && (
         <button className="open-arrow" onClick={toggleSidebar}>
           <i className="fa-solid fa-right-long"></i>
         </button>
@@ -38,30 +71,17 @@ const Sidebar = () => {
         )}
         <div className="sidebar-content">
           <ul>
-            <a
-              id="nav-experiences"
-              className="language-dependent"
-              onClick={handleOptionClick}
-              href="#experiences"
-            >
-              Experiences
-            </a>
-            <a
-              id="nav-projects"
-              className="language-dependent"
-              onClick={handleOptionClick}
-              href="#projects"
-            >
-              Projects
-            </a>
-            <a
-              id="nav-skills"
-              className="language-dependent"
-              onClick={handleOptionClick}
-              href="#skills"
-            >
-              Skills
-            </a>
+            {sections.map((section) => (
+              <a
+                key={section.id}
+                id={section.id}
+                className={section.className}
+                onClick={section.onClick}
+                href={section.href}
+              >
+                {section.text}
+              </a>
+            ))}
           </ul>
         </div>
       </div>

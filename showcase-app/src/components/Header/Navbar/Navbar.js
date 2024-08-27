@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { changeLanguage } from "../../../js/changeLanguage";
@@ -10,6 +11,16 @@ const Navbar = () => {
       behavior: "smooth",
     });
   };
+
+  const translatePage = () => {
+    const selectedFlag = document.getElementById("selectedFlag")?.alt;
+    
+    if (selectedFlag === "UK Flag") {
+      changeLanguage("en", null)
+    } else {
+      changeLanguage("fr", null)
+    }
+  }
 
   return (
     <header id="nav">
@@ -40,7 +51,10 @@ const Navbar = () => {
                       to="/"
                       className="nav-link"
                       activeclassname="active"
-                      onClick={scrollToTop}
+                      onClick={() => {
+                        scrollToTop();
+                        translatePage();
+                      }}
                     >
                       CV
                     </NavLink>
@@ -53,7 +67,10 @@ const Navbar = () => {
                       to="/blog"
                       className="nav-link"
                       activeclassname="active"
-                      onClick={scrollToTop}
+                      onClick={() => {
+                        scrollToTop();
+                        translatePage();
+                      }}
                     >
                       Blog
                     </NavLink>
@@ -67,7 +84,10 @@ const Navbar = () => {
                       to="/about"
                       className="nav-link language-dependent"
                       activeclassname="active"
-                      onClick={scrollToTop}
+                      onClick={() => {
+                        scrollToTop();
+                        translatePage();
+                      }}
                     >
                       About
                     </NavLink>
@@ -81,7 +101,10 @@ const Navbar = () => {
                       to="/contact"
                       className="nav-link language-dependent"
                       activeclassname="active"
-                      onClick={scrollToTop}
+                      onClick={() => {
+                        scrollToTop();
+                        translatePage();
+                      }}
                     >
                       Contact
                     </NavLink>
@@ -113,7 +136,7 @@ const Navbar = () => {
                     <li>
                       <button
                         className="dropdown-item"
-                        onClick={(event) => changeLanguage("en", event, "cv")}
+                        onClick={(event) => changeLanguage("en", event)}
                       >
                         <img
                           src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
@@ -129,7 +152,7 @@ const Navbar = () => {
                     <li>
                       <button
                         className="dropdown-item"
-                        onClick={(event) => changeLanguage("fr", event, "cv")}
+                        onClick={(event) => changeLanguage("fr", event)}
                       >
                         <img
                           src="https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png"

@@ -14,11 +14,11 @@
  *
  * @throws Will log an error message to the console if fetching or parsing the JSON fails.
  */
-export function changeLanguage(lang, event, pageType) {
+export function changeLanguage(lang, event) {
   const contentPath =
     lang === "en"
-      ? `./json/${pageType}/english-content.json`
-      : `./json/${pageType}/french-content.json`;
+      ? `./json/english-content.json`
+      : `./json/french-content.json`;
 
   /**
    * Chaining methods with the dot notation is a way to handle asynchronous operations.
@@ -55,6 +55,9 @@ export function changeLanguage(lang, event, pageType) {
     lang === "en"
       ? "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
       : "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png";
+  flagImage.alt = lang === "en" ? "UK Flag" : "Drapeau Francee";
 
-  event.preventDefault();
+  if (event !== null) {
+    event.preventDefault();
+  }
 }
