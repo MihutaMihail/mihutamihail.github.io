@@ -6,7 +6,7 @@ const Experience4 = () => {
       <div className="card mb-4">
         <div className="card-body">
           <h2 id="experience-4-name" className="card-title language-dependent">
-            Website Wordpress
+            CO2 Interface
           </h2>
           <p className="card-text">
             <strong className="language-dependent" id="experience-4-title">
@@ -19,15 +19,15 @@ const Experience4 = () => {
             </strong>
             <br />
             <span id="experience-4-duration" className="language-dependent">
-              April 2022 - May 2022
+              24 June 2024 - 9 August 2024
             </span>
           </p>
           <div className="card-text">
             <strong>Description</strong>
             <p id="experience-4-description" className="language-dependent">
-              Creation of a website for an association called LesBaleries' using
-              Wordpress. The goal is to have a functional website for its
-              clients.
+              Creation of a web interface for a company called Consort Group.
+              The goal is to have a functional interface to assist with CO2
+              calculations.
             </p>
             <strong id="experience-design" className="language-dependent">
               Design
@@ -35,10 +35,10 @@ const Experience4 = () => {
           </div>
           <ol>
             <li id="experience-4-design-item-1" className="language-dependent">
-              Database design
+              Design of the technological infrastructure
             </li>
             <li id="experience-4-design-item-2" className="language-dependent">
-              Administrator Page Functionality design
+              Design of the interface with Figma
             </li>
           </ol>
           <strong id="experience-methodology" className="language-dependent">
@@ -48,11 +48,12 @@ const Experience4 = () => {
             id="experience-4-methodology-description"
             className="language-dependent"
           >
-            We have adopted a collaborative team approach, working together
-            every day of the week, Monday through Friday.
+            Project review twice a week (Wednesday and Friday) with the team.
           </p>
           <strong>Technologies</strong>
-          <p>PHP, SQL, Wordpress Extensions</p>
+          <p>Python (w/ pandas, flask, jupyter notebook) <br></br>
+          HTML, CSS (w/ bootstrap) <br></br>
+          JS(w/ chart.js)</p>
         </div>
       </div>
     </div>

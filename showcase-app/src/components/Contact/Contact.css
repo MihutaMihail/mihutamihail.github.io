@@ -3,8 +3,12 @@
   margin-top: 5%;
 }
 
+.contact-info {
+  text-align: center !important;
+}
+
 .contact-info p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contact-form {
