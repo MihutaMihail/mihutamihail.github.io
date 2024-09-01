@@ -11,7 +11,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       <div className="modal-dialog" style={{ maxWidth: "65%" }}>
         <div className="modal-content">
           <div className="modal-header">
-            <h5 id="details" className="modal-title language-dependent">
+            <h5 id="modal-details" className="modal-title language-dependent">
               Details
             </h5>
             <button
@@ -23,8 +23,9 @@ const Modal = ({ isOpen, onClose, children }) => {
           <div className="modal-body">{children}</div>
           <div className="modal-footer">
             <button
+              id="modal-close"
               type="button"
-              className="btn btn-secondary"
+              className="btn btn-secondary language-dependent"
               onClick={onClose}
             >
               Close

@@ -24,6 +24,7 @@ const Project4 = () => {
                 href="https://www.youtube.com/watch?v=fn6k69TmOL0"
                 className="btn btn-dark m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 Watch on YouTube
               </a>
@@ -32,6 +33,7 @@ const Project4 = () => {
                 href="https://github.com/MihutaMihail/groupie_tracker"
                 className="btn btn-secondary m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 GitHub Repository
               </a>

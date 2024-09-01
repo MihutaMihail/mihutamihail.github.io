@@ -4,6 +4,21 @@ const Experience1 = () => {
   return (
     <div className="experience1">
       <div className="card mb-4">
+        <div
+          className="card-header"
+          style={{
+            backgroundColor: "#f5f5f5",
+            padding: "15px",
+          }}
+        >
+          <h2
+            id="experience-1-name"
+            className="card-title language-dependent"
+            style={{ margin: 0 }}
+          >
+            E-commerce
+          </h2>
+        </div>
         <div className="card-body">
           <a
             href="https://github.com/MihutaMihail/E-Commerce-PHP"
@@ -16,11 +31,8 @@ const Experience1 = () => {
           >
             <img src="https://github.com/fluidicon.png" width="40" />
           </a>
-          <h2 id="experience-1-name" className="card-title language-dependent">
-            E-commerce
-          </h2>
           <p className="card-text">
-            <strong className="language-dependent" id="experience-1-title">
+            <strong className="type-project language-dependent" id="experience-1-title">
               Learning project
             </strong>
           </p>

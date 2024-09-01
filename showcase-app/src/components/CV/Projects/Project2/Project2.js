@@ -22,6 +22,7 @@ const Project2 = () => {
                 href="https://www.youtube.com/watch?v=ghjP0xtL4sI"
                 className="btn btn-dark m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 Watch on YouTube
               </a>
@@ -30,6 +31,7 @@ const Project2 = () => {
                 href="https://github.com/MihutaMihail/Unreal-v5.1_KingdomPanic"
                 className="btn btn-secondary m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 GitHub Repository
               </a>

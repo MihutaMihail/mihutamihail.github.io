@@ -80,5 +80,10 @@
   "contact-left-name": "Name",
   "contact-left-button-text": "Submit",
 
-  "details": "Details"
+  "blog-1-description": "My experience and things that I have worked on in my internship at Consort Group.",
+  "blog-view-details": "View details...",
+  "modal-details": "Details",
+  "modal-close": "Close",
+  "modal-read": "Read",
+  "inner-modal-go-back": "Go back"
 }

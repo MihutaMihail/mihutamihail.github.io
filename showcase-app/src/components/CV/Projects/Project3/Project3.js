@@ -21,6 +21,7 @@ const Project3 = () => {
                 href="https://www.youtube.com/watch?v=DcCmeYA6cZ0"
                 className="btn btn-dark m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 Watch on YouTube
               </a>
@@ -29,6 +30,7 @@ const Project3 = () => {
                 href="https://github.com/MihutaMihail/pacman"
                 className="btn btn-secondary m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 GitHub Repository
               </a>

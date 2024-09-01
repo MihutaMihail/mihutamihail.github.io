@@ -22,6 +22,7 @@ const Project1 = () => {
                 href="https://www.youtube.com/watch?v=SfqUuGNmkmY"
                 className="btn btn-dark m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 Watch on YouTube
               </a>
@@ -30,6 +31,7 @@ const Project1 = () => {
                 href="https://github.com/MihutaMihail/Unity-v2021.3.16_Platformer"
                 className="btn btn-secondary m-1 language-dependent"
                 target="_blank"
+                rel="noreferrer"
               >
                 GitHub Repository
               </a>

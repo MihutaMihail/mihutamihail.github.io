@@ -4,23 +4,40 @@ const Experience2 = () => {
   return (
     <div className="experience2">
       <div className="card mb-4">
+        <div
+          className="card-header"
+          style={{
+            backgroundColor: "#f5f5f5",
+            padding: "15px",
+          }}
+        >
+          <h2
+            id="experience-2-name"
+            className="card-title language-dependent"
+            style={{ margin: 0 }}
+          >
+            API
+          </h2>
+        </div>
         <div className="card-body">
           <a
             href="https://github.com/MihutaMihail/CSharp_API"
             target="_blank"
+            rel="noreferrer"
             style={{
               position: "absolute",
               top: "10px",
               right: "10px",
             }}
           >
-            <img src="https://github.com/fluidicon.png" width="40" />
+            <img
+              src="https://github.com/fluidicon.png"
+              width="40"
+              alt="github"
+            />
           </a>
-          <h2 id="experience-2-name" className="card-title language-dependent">
-            API
-          </h2>
           <p className="card-text">
-            <strong className="language-dependent" id="experience-2-title">
+            <strong className="type-project language-dependent" id="experience-2-title">
               Learning project
             </strong>
           </p>

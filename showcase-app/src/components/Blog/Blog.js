@@ -4,7 +4,6 @@ import Modal from "./Modal/Modal";
 import Introduction from "./Parts/Introduction/Introduction";
 import PowerBI from "./Parts/PowerBI/PowerBI";
 import CO2Interface from "./Parts/CO2Interface/CO2Interface";
-import Conclusion from "./Parts/Conclusion/Conclusion";
 import { changeLanguage } from "../../js/changeLanguage";
 
 const Blog = () => {
@@ -38,13 +37,34 @@ const Blog = () => {
 
   const handleGoBackClick = () => {
     setSelectedCard(null);
+    const selectedFlag = document.getElementById("selectedFlag")?.alt;
+
+    if (selectedFlag === "UK Flag") {
+      changeLanguage("en", null);
+    } else {
+      changeLanguage("fr", null);
+    }
   };
 
   const cards = [
-    { id: 1, title: "Introduction", content: <Introduction /> },
-    { id: 2, title: "Power BI", content: <PowerBI /> },
-    { id: 3, title: "CO2 Interface", content: <CO2Interface /> },
-    { id: 4, title: "Conclusion", content: <Conclusion /> },
+    {
+      id: 1,
+      title: "Introduction",
+      src: "https://consort-group.com/logo.png",
+      content: <Introduction />,
+    },
+    {
+      id: 2,
+      title: "Power BI",
+      src: "./img/powerbi_accueil.JPG",
+      content: <PowerBI />,
+    },
+    {
+      id: 3,
+      title: "CO2 Interface",
+      src: "./img/index.JPG",
+      content: <CO2Interface />,
+    },
   ];
 
   return (
@@ -64,13 +84,14 @@ const Blog = () => {
               />
               <div className="card-body">
                 <div className="card-header mb-2 h6">Consort Group</div>
-                <p className="card-text">
+                <p id="blog-1-description" className="card-text language-dependent">
                   My experience and things that I have worked on in my
                   internship at Consort Group.
                 </p>
                 <div className="text-center">
                   <button
-                    className="btn btn-secondary m-1 w-100"
+                    id="blog-view-details"
+                    className="btn btn-secondary m-1 w-100 language-dependent"
                     onClick={handleViewDetailsClick}
                   >
                     View details...
@@ -88,7 +109,8 @@ const Blog = () => {
               {selectedCard.content}
               <div className="text-center mt-3">
                 <button
-                  className="btn btn-secondary"
+                  id="inner-modal-go-back"
+                  className="btn btn-secondary language-dependent"
                   onClick={handleGoBackClick}
                 >
                   Go Back
@@ -100,24 +122,22 @@ const Blog = () => {
               {cards.map((card) => (
                 <div className="col mb-3" key={card.id}>
                   <div className="card shadow">
+                    <div className="card-header mb-2 h6 text-center">
+                      {card.title}
+                    </div>
                     <img
-                      src="https://via.placeholder.com/150"
+                      src={card.src}
                       className="card-img-top"
                       alt={`Card ${card.id}`}
                     />
-                    <div className="card-body">
-                      <div className="card-header mb-2 h6">{card.title}</div>
-                      <p className="card-text">
-                        Brief details about {card.title}.
-                      </p>
-                      <div className="text-center">
-                        <button
-                          className="btn btn-primary m-1 w-100"
-                          onClick={() => handleReadClick(card)}
-                        >
-                          Read
-                        </button>
-                      </div>
+                    <div className="card-body text-center">
+                      <button
+                        id="modal-read"
+                        className="btn btn-primary m-1 w-100 language-dependent"
+                        onClick={() => handleReadClick(card)}
+                      >
+                        Read
+                      </button>
                     </div>
                   </div>
                 </div>

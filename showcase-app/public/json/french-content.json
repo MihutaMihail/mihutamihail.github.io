@@ -80,5 +80,10 @@
   "contact-left-name": "Nom",
   "contact-left-button-text": "Soumettre",
 
-  "details": "Détailles"
+  "blog-1-description": "Mon expérience et les projets sur lesquels j'ai travaillé lors de mon stage chez Consort Group.",
+  "blog-view-details": "Voir les détailles...",
+  "modal-details": "Détailles",
+  "modal-close": "Fermer",
+  "modal-read": "Lire",
+  "inner-modal-go-back": "Retourner"
 }

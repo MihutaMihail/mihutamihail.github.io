@@ -32,6 +32,7 @@ const Projects = () => {
                 <a
                   href="https://github.com/MihutaMihail"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-secondary"
                 >
                   GitHub
