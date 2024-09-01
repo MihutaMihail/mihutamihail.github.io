@@ -78,5 +78,7 @@
 
   "contact-right-phone-number": "Phone Number",
   "contact-left-name": "Name",
-  "contact-left-button-text": "Submit"
+  "contact-left-button-text": "Submit",
+
+  "details": "Details"
 }
