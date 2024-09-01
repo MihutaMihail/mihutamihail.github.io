@@ -3,8 +3,10 @@
   margin-top: 5%;
 }
 
-.experiences .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+@media (min-width: 992px) {
+  .experiences .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }

@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="container">
         <div className="section-title">
-          <h2>Introduction</h2>
+          <h2 id="nav-about" className="language-dependent">About</h2>
         </div>
 
         <div className="row justify-content-center align-items-center">

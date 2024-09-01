@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { changeLanguage } from "../../../js/changeLanguage";
