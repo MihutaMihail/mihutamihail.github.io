@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { changeLanguage } from "../../../js/changeLanguage";
 
 const Navbar = () => {
+  // State to manage selected language
+  const [selectedLanguage, setSelectedLanguage] = useState("en"); // Default to English
+
+  // Function to scroll to the top of the page smoothly
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -11,21 +15,32 @@ const Navbar = () => {
     });
   };
 
+  // Function to change the language based on the selected language flag
   const translatePage = () => {
-    const selectedFlag = document.getElementById("selectedFlag")?.alt;
-    
-    if (selectedFlag === "UK Flag") {
-      changeLanguage("en", null)
+    if (selectedLanguage === "en") {
+      changeLanguage("en", null);
     } else {
-      changeLanguage("fr", null)
+      changeLanguage("fr", null);
     }
-  }
+  };
+
+  // Combined handler for navigation click events
+  const handleNavClick = () => {
+    scrollToTop();
+    translatePage();
+  };
+
+  // Function to handle langauge selection
+  const handleLanguageChange = (lang) => {
+    setSelectedLanguage(lang);
+    changeLanguage(lang, null);
+  };
 
   return (
     <header id="nav">
       <div className="container-fluid">
         <div className="row">
-          {/* <!-- Navbar --> */}
+          {/* Navbar */}
           <nav className="navbar navbar-expand-lg">
             <div className="container">
               <button
@@ -50,10 +65,7 @@ const Navbar = () => {
                       to="/"
                       className="nav-link"
                       activeclassname="active"
-                      onClick={() => {
-                        scrollToTop();
-                        translatePage();
-                      }}
+                      onClick={handleNavClick}
                     >
                       CV
                     </NavLink>
@@ -66,10 +78,7 @@ const Navbar = () => {
                       to="/blog"
                       className="nav-link"
                       activeclassname="active"
-                      onClick={() => {
-                        scrollToTop();
-                        translatePage();
-                      }}
+                      onClick={handleNavClick}
                     >
                       Blog
                     </NavLink>
@@ -83,10 +92,7 @@ const Navbar = () => {
                       to="/about"
                       className="nav-link language-dependent"
                       activeclassname="active"
-                      onClick={() => {
-                        scrollToTop();
-                        translatePage();
-                      }}
+                      onClick={handleNavClick}
                     >
                       About
                     </NavLink>
@@ -100,10 +106,7 @@ const Navbar = () => {
                       to="/contact"
                       className="nav-link language-dependent"
                       activeclassname="active"
-                      onClick={() => {
-                        scrollToTop();
-                        translatePage();
-                      }}
+                      onClick={handleNavClick}
                     >
                       Contact
                     </NavLink>
@@ -111,7 +114,7 @@ const Navbar = () => {
                   {/* End Contact */}
                 </ul>
 
-                {/* <!-- Language dropdown --> */}
+                {/* Language dropdown */}
                 <div className="dropdown language-dropdown">
                   <button
                     className="btn btn-primary dropdown-toggle"
@@ -119,12 +122,22 @@ const Navbar = () => {
                     id="dropdownLanguage"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
+                    aria-label={`Selected Language: ${
+                      selectedLanguage === "en" ? "English" : "Français"
+                    }`}
                   >
+                    {/* Dynamically show the selected flag */}
                     <img
                       id="selectedFlag"
-                      src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
+                      src={
+                        selectedLanguage === "en"
+                          ? "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
+                          : "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png"
+                      }
                       className="language-button"
-                      alt="UK Flag"
+                      alt={
+                        selectedLanguage === "en" ? "UK Flag" : "France Flag"
+                      }
                     />
                   </button>
                   <ul
@@ -135,7 +148,8 @@ const Navbar = () => {
                     <li>
                       <button
                         className="dropdown-item"
-                        onClick={(event) => changeLanguage("en", event)}
+                        onClick={() => handleLanguageChange("en")}
+                        aria-label="Change language to English"
                       >
                         <img
                           src="https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
@@ -151,12 +165,13 @@ const Navbar = () => {
                     <li>
                       <button
                         className="dropdown-item"
-                        onClick={(event) => changeLanguage("fr", event)}
+                        onClick={() => handleLanguageChange("fr")}
+                        aria-label="Change language to Français"
                       >
                         <img
                           src="https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png"
                           className="language-button"
-                          alt="Drapeau France"
+                          alt="France Flag"
                         />
                         &nbsp;Français
                       </button>
@@ -164,15 +179,14 @@ const Navbar = () => {
                     {/* End French */}
                   </ul>
                 </div>
-                {/* <!-- End Language dropdown --> */}
+                {/* End Language dropdown */}
               </div>
             </div>
           </nav>
-          {/* <!-- End Navbar --> */}
+          {/* End Navbar */}
         </div>
       </div>
     </header>
   );
 };
-
 export default Navbar;

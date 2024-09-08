@@ -10,6 +10,7 @@ const Footer = () => {
             <div className="col-lg-8 col-md-6">
               <div className="footer-info mb-4">
                 <p>
+                  {/* CONTACT INFO */}
                   <strong id="contact-phone" className="language-dependent">
                     Phone:&nbsp;
                   </strong>
@@ -18,64 +19,48 @@ const Footer = () => {
                   <strong>Email:</strong> mihutamihail95@gmail.com
                   <br />
                 </p>
+                {/* END CONTACT INFO */}
+
+                {/* SOCIAL LINKS */}
                 <div className="social-links mt-3">
+                  {/* LINKEDIN */}
                   <a
                     href="https://www.linkedin.com/in/mihuta-mihail-51b690296"
-                    className="twitter"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i className="bx bxl-linkedin"></i>
                   </a>
+                  {/* END LINKEDIN */}
+
+                  {/* GITHUB */}
                   <a
                     href="https://github.com/MihutaMihail"
-                    className="facebook"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <i className="bx bxl-github"></i>
                   </a>
+                  {/* END GITHUB */}
                 </div>
+                {/* END SOCIAL LINKS */}
               </div>
             </div>
 
+            {/* DOWNLOAD CV */}
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4 id="useful-links" className="language-dependent">
-                Useful Links
+              <h4 id="download-cv" className="language-dependent">
+                Download CV
               </h4>
-              <ul>
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a
-                    id="nav-skills"
-                    className="language-dependent"
-                    href="#skills"
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a
-                    id="nav-projects"
-                    className="language-dependent"
-                    href="#projects"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a
-                    id="nav-experiences"
-                    className="language-dependent"
-                    href="#experiences"
-                  >
-                    Experiences
-                  </a>
-                </li>
-              </ul>
+              <a
+                href="./pdf/CV_Alternance_Mihuta-Mihail.pdf"
+                className="btn btn-secondary"
+                download="CV_Alternance_Mihuta-Mihail.pdf"
+              >
+                CV_Alternance_Mihuta-Mihail.pdf
+              </a>
             </div>
+            {/* END DOWNLOAD CV */}
           </div>
         </div>
       </div>

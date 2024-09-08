@@ -9,6 +9,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <section id="projects">
+        {/* SECTION TITLE */}
         <div className="container">
           <div className="section-title">
             <h2 id="nav-projects" className="language-dependent">
@@ -16,6 +17,7 @@ const Projects = () => {
             </h2>
           </div>
 
+          {/* PROJECTS */}
           <div className="row row-cols-1 row-cols-md-2">
             <Project1 />
             <Project2 />

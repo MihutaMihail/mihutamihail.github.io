@@ -5,24 +5,30 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
+        {/* SECTION TITLE */}
         <div className="section-title">
-          <h2 id="nav-about" className="language-dependent">About</h2>
+          <h2 id="nav-about" className="language-dependent">
+            About
+          </h2>
         </div>
+        {/* END SECTION TITLE */}
 
+        {/* PROFILE IMAGE */}
         <div className="row justify-content-center align-items-center">
-          <div className="col-md-6 order-md-1">
+          <div className="col-md-6 order-1">
             <div>
               <figure>
                 <img
                   src="./img/profile.jpg"
-                  alt="#"
+                  alt="Profile"
                   className="img-fluid img-thumbnail rounded img-introduction"
                 />
               </figure>
             </div>
           </div>
+          {/* END PROFILE IMAGE */}
 
-          <div className="col-md-6 order-md-2">
+          <div className="col-md-6 order-2">
             <div className="text-wrap">
               {/* MY JOURNEY */}
               <h2 id="my-journey" className="language-dependent">
@@ -31,13 +37,12 @@ const About = () => {
               <p id="my-journey-message" className="language-dependent">
                 Passionate by games and computers since childhood, I embarked on
                 a journey into the IT world and am now working as a developer.
-                I'm still in the process of specializing, so my current projects
-                mainly involve school assignements and interships. My experience
-                includes working with Unreal Engine (Blueprints), C# (APIs and
-                Unity), Python (for a Discord bot and data analysis with
-                Pandas), PHP (e-commerce site and a forum) and Javascript (for a
-                Pac-Man game), among others. I have completed my BTS SIO diploma
-                and am now in the process of my master's degree.
+                My current projects involve school assignements and internships.
+                My experience includes working with Unreal Engine (Blueprints),
+                C# (APIs and Unity), Python (for a Discord bot and data analysis
+                with Pandas), PHP (e-commerce site, forum) and Javascript
+                (Pac-Man game), among others. I have completed my BTS SIO
+                diploma and am currently pursuing my master's degree.
               </p>
               {/* END MY JOURNEY */}
 

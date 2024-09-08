@@ -4,27 +4,27 @@ const Experience4 = () => {
   return (
     <div className="experience4">
       <div className="card mb-4">
-      <div
-          className="card-header"
-          style={{
-            backgroundColor: "#f5f5f5",
-            padding: "15px",
-          }}
-        >
-          <h2
-            id="experience-4-name"
-            className="card-title language-dependent"
-            style={{ margin: 0 }}
-          >
+        {/* CARD HEADER */}
+        <div className="card-header">
+          <h2 id="experience-4-name" className="card-title language-dependent">
             CO2 Interface
           </h2>
         </div>
+        {/* END - CARD HEADER*/}
+
         <div className="card-body">
+          {/* TYPE OF PROJECT */}
           <p className="card-text">
-            <strong className="type-project language-dependent" id="experience-4-title">
+            <strong
+              className="type-project language-dependent"
+              id="experience-4-title"
+            >
               Internship
             </strong>
           </p>
+          {/* END - TYPE OF PROJECT */}
+
+          {/* DURATION */}
           <p className="card-text">
             <strong id="experience-duration" className="language-dependent">
               Duration
@@ -34,6 +34,9 @@ const Experience4 = () => {
               24 June 2024 - 9 August 2024
             </span>
           </p>
+          {/* END - DURATION */}
+
+          {/* DESCRIPTION */}
           <div className="card-text">
             <strong>Description</strong>
             <p id="experience-4-description" className="language-dependent">
@@ -41,10 +44,15 @@ const Experience4 = () => {
               The goal is to have a functional interface to assist with CO2
               calculations.
             </p>
+            {/* END DESCRIPTION */}
+
+            {/* DESIGN */}
             <strong id="experience-design" className="language-dependent">
               Design
             </strong>
           </div>
+
+          {/* DESIGN - LIST OF ITEMS */}
           <ol>
             <li id="experience-4-design-item-1" className="language-dependent">
               Design of the technological infrastructure
@@ -53,6 +61,9 @@ const Experience4 = () => {
               Design of the interface with Figma
             </li>
           </ol>
+          {/* END DESIGN */}
+
+          {/* METHODOLOGY */}
           <strong id="experience-methodology" className="language-dependent">
             Methodology
           </strong>
@@ -62,10 +73,16 @@ const Experience4 = () => {
           >
             Project review twice a week (Wednesday and Friday) with the team.
           </p>
+          {/* END - METHODOLOGY */}
+
+          {/* TECHNOLOGIES */}
           <strong>Technologies</strong>
-          <p>Python (w/ pandas, flask, jupyter notebook) <br></br>
-          HTML, CSS (w/ bootstrap) <br></br>
-          JS(w/ chart.js)</p>
+          <p>
+            Python (w/ pandas, flask, jupyter notebook) <br></br>
+            HTML, CSS (w/ bootstrap) <br></br>
+            JS (w/ chart.js)
+          </p>
+          {/* END TECHNOLOGIES */}
         </div>
       </div>
     </div>

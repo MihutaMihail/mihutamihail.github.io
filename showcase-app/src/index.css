@@ -1,16 +1,8 @@
-/*==================================================
-# GENERAL
-==================================================*/
 body {
-  margin: 0 !;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0; /* Ensures there's no extra space around the body of the page */
+  -webkit-font-smoothing: antialiased; /* Smoother font rendering in WebKit browsers (like Chrome and Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Grayscale (uses shades of gray to smooth the edges) font smoothing in Firefox on macOS*/
   font-family: "Poppins", sans-serif;
-}
-
-h2 {
-  font-size: 30px;
-  color: #151515;
 }
 
 /*==================================================
@@ -18,10 +10,10 @@ h2 {
 ==================================================*/
 section {
   padding: 30px 0px;
-  overflow: hidden;
+  overflow: hidden; /* Prevent child elements from expanding over the boundaries of the section*/
 }
 
-.section-title {
+.section-title { 
   padding-bottom: 15px;
 }
 
@@ -36,6 +28,7 @@ section {
   color: black;
 }
 
+/* h2 line pseudo-element */
 .section-title h2::after {
   content: "";
   width: 120px;
@@ -43,15 +36,4 @@ section {
   display: inline-block;
   background: black;
   margin: 8px 10px;
-}
-
-@media (max-width: 375px) {
-  .section-title h2 {
-    font-size: 23px;
-  }
-    
-  .section-title h2::after {
-    margin: 6px 5px;
-    width: 90px;
-  }
 }

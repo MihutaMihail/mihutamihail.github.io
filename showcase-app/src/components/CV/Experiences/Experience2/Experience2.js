@@ -4,31 +4,21 @@ const Experience2 = () => {
   return (
     <div className="experience2">
       <div className="card mb-4">
-        <div
-          className="card-header"
-          style={{
-            backgroundColor: "#f5f5f5",
-            padding: "15px",
-          }}
-        >
-          <h2
-            id="experience-2-name"
-            className="card-title language-dependent"
-            style={{ margin: 0 }}
-          >
+        {/* CARD HEADER */}
+        <div className="card-header">
+          <h2 id="experience-2-name" className="card-title language-dependent">
             API
           </h2>
         </div>
+        {/* END - CARD HEADER */}
+        
         <div className="card-body">
+          {/* GITHUB LINK */}
           <a
+            className="github-icon"
             href="https://github.com/MihutaMihail/CSharp_API"
             target="_blank"
             rel="noreferrer"
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-            }}
           >
             <img
               src="https://github.com/fluidicon.png"
@@ -36,11 +26,20 @@ const Experience2 = () => {
               alt="github"
             />
           </a>
+          {/* END - GITHUB LINK */}
+
+          {/* TYPE OF PROJECT */}
           <p className="card-text">
-            <strong className="type-project language-dependent" id="experience-2-title">
+            <strong
+              className="type-project language-dependent"
+              id="experience-2-title"
+            >
               Learning project
             </strong>
           </p>
+          {/* END - TYPE OF PROJECT */}
+
+          {/* DURATION */}
           <p className="card-text">
             <strong id="experience-duration" className="language-dependent">
               Duration
@@ -50,16 +49,24 @@ const Experience2 = () => {
               21 November 2023 - 14 January 2024
             </span>
           </p>
+          {/* END - DURATION */}
+
+          {/* DESCRIPTION */}
           <div className="card-text">
             <strong>Description</strong>
             <p id="experience-2-description" className="language-dependent">
               Creation of an API to manage CRUD operations for users and their
-              products
+              products.
             </p>
+            {/* END DESCRIPTION */}
+
+            {/* DESIGN */}
             <strong id="experience-design" className="language-dependent">
               Design
             </strong>
           </div>
+
+          {/* DESIGN - LIST OF ITEMS */}
           <ol>
             <li id="experience-2-design-item-1" className="language-dependent">
               Controller design
@@ -77,6 +84,9 @@ const Experience2 = () => {
               Database design
             </li>
           </ol>
+          {/* END DESIGN */}
+
+          {/* METHODOLOGY */}
           <strong id="experience-methodology" className="language-dependent">
             Methodology
           </strong>
@@ -87,8 +97,12 @@ const Experience2 = () => {
             Every week, we hold a project progress meeting with the team. We use
             Trello for organization and Discord for communication.
           </p>
+          {/* END METHODOLOGY */}
+
+          {/* TECHNOLOGIES */}
           <strong>Technologies</strong>
           <p>C#, SQL</p>
+          {/* END TECHNOLOGIES */}
         </div>
       </div>
     </div>

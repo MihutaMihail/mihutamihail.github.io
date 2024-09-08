@@ -5,11 +5,14 @@ const Project4 = () => {
     <div className="project4">
       <div className="col mb-3">
         <div className="card shadow">
+          {/* Thumbnail image for the project */}
           <img
             src="https://img.youtube.com/vi/fn6k69TmOL0/maxresdefault.jpg"
             className="card-img-top"
             alt="Video Thumbnail"
           />
+
+          {/* Card body containing text and links */}
           <div className="card-body">
             <div className="card-header mb-2 h6">Groupie Tracker</div>
             <p
@@ -18,7 +21,10 @@ const Project4 = () => {
             >
               Use of the groupie-tracker API to create an app with golang.
             </p>
+            
+            {/* Container for buttons */}
             <div className="text-center">
+              {/* YouTube link */}
               <a
                 id="watch-on-youtube"
                 href="https://www.youtube.com/watch?v=fn6k69TmOL0"
@@ -28,6 +34,8 @@ const Project4 = () => {
               >
                 Watch on YouTube
               </a>
+
+              {/* GitHub link to the repository */}
               <a
                 id="github-repository"
                 href="https://github.com/MihutaMihail/groupie_tracker"

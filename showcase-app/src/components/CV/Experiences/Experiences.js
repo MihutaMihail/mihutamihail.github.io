@@ -10,12 +10,14 @@ const Experiences = () => {
     <div className="experiences">
       <section id="experiences">
         <div className="container">
+          {/* SECTION TITLE */}
           <div className="section-title">
             <h2 id="nav-experiences" className="language-dependent">
               Experiences
             </h2>
           </div>
 
+          {/* EXPERIENCES */}
           <div className="row">
             <Experiences1 />
             <Experiences4 />

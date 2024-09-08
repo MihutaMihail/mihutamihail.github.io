@@ -1,0 +1,9 @@
+.app-container {
+  display: flex; /* Applies Flexbox layout (rows and columns) */
+  flex-direction: column; /* Vertically stacks children (Header, Content container and Footer) */
+  min-height: 100vh; /* Layout stretches to full height of the browser window */
+}
+
+.content-container {
+  flex-grow: 1; /* Expand to fill any available space */
+}

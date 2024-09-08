@@ -1,3 +1,22 @@
 .co2interface {
   text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.co2interface section p {
+  text-align: center;
+}
+
+.carousel-indicators button {
+  background-color: rgb(59, 59, 59) !important; /* Black color for inactive indicators */
+}
+
+.carousel-indicators .active {
+  background-color: black !important; /* Optional: different color for the active indicator */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black !important;
 }

@@ -4,14 +4,17 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <section id="contact" className="contact">
+      {/* SECTION TITLE */}
       <div className="container">
         <div className="section-title">
           <h2 id="nav-contact" className="language-dependent">
             Contact
           </h2>
         </div>
+        {/* END SECTION TITLE */}
 
         <div className="row justify-content-center align-items-center">
+          {/* PHONE NUMBER */}
           <div className="col-md-6 order-md-2">
             <div className="contact-info">
               <h2
@@ -23,9 +26,11 @@ const Contact = () => {
               <p>06 60 53 40 79</p>
             </div>
           </div>
+          {/* END PHONE NUMBER */}
 
           <div className="col-md-6 order-md-1">
             <form className="contact-form">
+              {/* FORM - NAME */}
               <div className="form-group">
                 <label
                   id="contact-left-name"
@@ -42,6 +47,9 @@ const Contact = () => {
                   required
                 />
               </div>
+              {/* END FORM - NAME */}
+
+              {/* FORM - EMAIL */}
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
                 <input
@@ -52,6 +60,9 @@ const Contact = () => {
                   required
                 />
               </div>
+              {/* END FORM - EMAIL */}
+
+              {/* FORM - MESSAGE */}
               <div className="form-group">
                 <label htmlFor="message">Message:</label>
                 <textarea
@@ -62,6 +73,9 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
+              {/* END FORM - MESSAGE */}
+
+              {/* FORM - SUBMIT BUTTON */}
               <button
                 id="contact-left-button-text"
                 className="btn btn-block language-dependent"
@@ -69,6 +83,7 @@ const Contact = () => {
               >
                 Submit
               </button>
+              {/* END FORM - SUBMIT BUTTON */}
             </form>
           </div>
         </div>

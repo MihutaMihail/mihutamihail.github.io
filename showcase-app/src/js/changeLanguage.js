@@ -55,7 +55,7 @@ export function changeLanguage(lang, event) {
     lang === "en"
       ? "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
       : "https://upload.wikimedia.org/wikipedia/commons/6/62/Flag_of_France.png";
-  flagImage.alt = lang === "en" ? "UK Flag" : "Drapeau Francee";
+  flagImage.alt = lang === "en" ? "UK Flag" : "Drapeau France";
 
   if (event !== null) {
     event.preventDefault();

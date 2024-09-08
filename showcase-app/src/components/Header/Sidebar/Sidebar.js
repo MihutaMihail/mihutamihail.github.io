@@ -1,89 +1,122 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useState, useMemo } from "react";
+import { useLocation } from "react-router-dom";
 import "./Sidebar.css";
 import { smoothScrolling } from "../../../js/smoothScrolling";
 
 const Sidebar = () => {
-  // Smooth scrolling
   useEffect(() => {
-    // Call the function to set up smooth scrolling and offset
+    /**
+     * This effect runs only once after the component mounts, as indicated by the
+     * empty dependency array. This ensures that smooth scrolling is set up only once
+     * when the component is first rendered and avoids unnecessary re-renders.
+     *
+     * @returns {function} cleanup - The cleanup function to remove event listeners
+     *                              when the component unmounts.
+     */
     const cleanup = smoothScrolling();
-
-    // Return the cleanup function to remove event listeners on unmount
     return cleanup;
-  }, []);
+  }, []); // Empty dependency array
 
-  // Sidebar
+  // State to manage if the sidebar is open
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to toggle the sidebar's open state
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Close the sidebar when an option is clicked
   const handleOptionClick = () => {
     setIsOpen(false);
   };
 
-  // Sidebar sections per page
-  const sidebarSections = {
-    "/": [
-      {
-        id: "nav-experiences",
-        className: "language-dependent",
-        onClick: handleOptionClick,
-        href: "#experiences",
-        text: "Experiences",
-      },
-      {
-        id: "nav-projects",
-        className: "language-dependent",
-        onClick: handleOptionClick,
-        href: "#projects",
-        text: "Projects",
-      },
-      {
-        id: "nav-skills",
-        className: "language-dependent",
-        onClick: handleOptionClick,
-        href: "#skills",
-        text: "Skills",
-      },
-    ],
-    "/blog": [],
-  };
+  // Memoized sidebar sections based on the current route
+  const sidebarSections = useMemo(
+    () => ({
+      /**
+       * By memoizing this object, we ensure that it is
+       * created only once during the component's lifecycle,
+       * as indicated by the empty dependency array. This
+       * prevents unnecessary recalculations and re-creations
+       * of the object on everey render, improving performance.
+       */
+      "/": [
+        {
+          id: "nav-experiences",
+          className: "language-dependent",
+          onClick: handleOptionClick,
+          href: "#experiences",
+          text: "Experiences",
+        },
+        {
+          id: "nav-projects",
+          className: "language-dependent",
+          onClick: handleOptionClick,
+          href: "#projects",
+          text: "Projects",
+        },
+        {
+          id: "nav-skills",
+          className: "language-dependent",
+          onClick: handleOptionClick,
+          href: "#skills",
+          text: "Skills",
+        },
+      ],
+      "/blog": [],
+      "/about": [],
+      "/contact": [],
+    }),
+    []
+  );
 
-  // Get current path (i.e. '/' or '/blog')
+  // Get current path (i.e. '/' or '/blog') from the React Routeur location
   const location = useLocation();
   const sections = sidebarSections[location.pathname] || [];
 
+  // Open / Close sidebar toggle button
+  const SidebarToggleButton = ({ isOpen, toggleSidebar }) => (
+    <button
+      className={isOpen ? "close-arrow" : "open-arrow"}
+      onClick={toggleSidebar}
+      aria-label={isOpen ? "Close Sidebar" : "Open Sidebar"}
+    >
+      <i
+        className={`fa-solid ${isOpen ? "fa-left-long" : "fa-right-long"}`}
+      ></i>
+    </button>
+  );
+
   return (
     <div>
+      {/* Render Open button when sidebar is closed and there are sections */}
       {!isOpen && sections.length > 0 && (
-        <button className="open-arrow" onClick={toggleSidebar}>
-          <i className="fa-solid fa-right-long"></i>
-        </button>
+        <SidebarToggleButton isOpen={isOpen} toggleSidebar={toggleSidebar} />
       )}
+
+      {/* Sidebar container */}
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
-        {isOpen && (
-          <button className="close-arrow" onClick={toggleSidebar}>
-            <i className="fa-solid fa-left-long"></i>
-          </button>
-        )}
-        <div className="sidebar-content">
+        {/* Render Close button inside sidebar when it's open */}
+        {isOpen && <SidebarToggleButton isOpen={isOpen} toggleSidebar={toggleSidebar} />} 
+
+        {/* Sidebar Content */}
+        <nav className="sidebar-content">
           <ul>
             {sections.map((section) => (
-              <a
-                key={section.id}
-                id={section.id}
-                className={section.className}
-                onClick={section.onClick}
-                href={section.href}
-              >
-                {section.text}
-              </a>
+              <li key={section.id}>
+                <a
+                  id={section.id}
+                  className={section.className}
+                  onClick={section.onClick}
+                  href={section.href}
+                >
+                  {section.text}
+                </a>
+              </li>
             ))}
           </ul>
-        </div>
+        </nav>
+
       </div>
     </div>
   );

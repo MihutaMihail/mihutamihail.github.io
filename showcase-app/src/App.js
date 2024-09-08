@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import "./App.css"
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import CV from "./components/CV/CV";
@@ -9,15 +10,15 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="app-container">
       <Header />
-      <div className="flex-grow-1">
+      <div className="content-container">
         <Routes>
           <Route path="/" element={<CV />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+        </Routes> 
       </div>
       <Footer />
     </div>

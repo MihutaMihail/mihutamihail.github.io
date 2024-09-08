@@ -73,11 +73,11 @@
   "experience-methodology": "Methodology",
   "experience-design": "Design",
 
-  "contact-phone": "Phone:",
-  "useful-links": "Useful Links",
+  "contact-phone": "Phone: ",
+  "download-cv": "Download CV",
 
   "contact-right-phone-number": "Phone Number",
-  "contact-left-name": "Name",
+  "contact-left-name": "Name:",
   "contact-left-button-text": "Submit",
 
   "blog-1-description": "My experience and things that I have worked on in my internship at Consort Group.",
@@ -85,5 +85,46 @@
   "modal-details": "Details",
   "modal-close": "Close",
   "modal-read": "Read",
-  "inner-modal-go-back": "Go back"
+  "inner-modal-go-back": "Go back",
+  
+  "introduction-item-1": "Consort Group is a French company that specializes in IT infrastructure and data management solutions. It offers services across multiple domains including cybersecurity, cloud computing or systems management.",
+  "introduction-item-2": "The group is operating under two main branches: Consortis, which focuses on IT infrastructure services, and Consortia, which specializes in data engineering and digital development.",
+  "introduction-item-3": "The time that I have spent there can be divided into 2 parts. For the first 2 weeks, I have worked with Power BI and for the remaining 5 weeks, I have developed an interface to automate a specific part of the CO2 footprint calculation process.",
+  "introduction-item-4": "This specific part was importing the files used to calculate CO2. In addition, I also developed a component for displaying the results of this said CO2 footprint.",
+
+  "powerbi-section-title-1": "What is it ?",
+  "powerbi-section-title-2": "What is the goal ?",
+  "powerbi-section-title-3": "What does it look like ?",
+
+  "powerbi-item-1": "Power BI is a business analytics tool developed by Microsoft thatt allows you to visualize data. It helps you create interactive and visually appealing dashboard and reports from your data. It can also connect various data sources, such as Excel spreadsheets, databases, and more.",
+  "powerbi-item-2": "The goal is to verify that the numbers that came out of the calculation engine was indeed correct and corresponded with the data that was within Power BI. Even though this part didn't really get much use, it was still helpful to verify this and make sure that the numbers are correct.",
+  "powerbi-item-3": "Here's some images on how the power bi presentation that I have done during the first 2 weeks.",
+  "powerbi-item-4": " On the left we have all the filters where we can choose what we would like the data to be based on. If we were to choose a client like CLIENT XYZ, then all the data inside the graphs will be completely based on this particular client and no other client. If we were to choose a profile next, the graphs would have been based on the CLIENT XYZ as well as the chosen profile.",
+  "powerbi-item-5": "In the top right we can see that we have the months of the year. Clicking on a month will display the data on that particular month while the donut chart shows the data during the full year.",
+  "powerbi-item-6": "Here's an image of the third tab:",
+  "powerbi-item-7": "Here we can see that we have the same thing effectively but only based on the profile.",
+
+  "co2interface-section-title-1": "Results page",
+  "co2interface-section-title-2": "Index page",
+  "co2interface-section-title-3": "Documenting code",
+
+  "co2interface-item-1": "This is what I've done during the 5 remaining weeks after working with Power BI.",
+  "co2interface-item-2": "Before starting the project, we first must identify the technical stack, meaning the technologies that we're going to use for this particular project. Here's how it looks like:",
+  "co2interface-item-3": "Preferred IDE",
+  "co2interface-item-4": "Chosen language for data manipulation",
+  "co2interface-item-5": "Testing environment for Pandas",
+  "co2interface-item-6": "Used for manipulation Excel files data",
+  "co2interface-item-7": "Chosen language for charts and interacting with the backend",
+  "co2interface-item-8": "Used to make charts",
+  "co2interface-item-9": "Everything besides the charts has been done using CSS and most importantly, Bootstrap. The charts has been done using the library Chart.js. As you might seen in the images, the numbers are completely arbitatry since I didn't have any Excel files with real data.",
+  "co2interface-item-10": "I call this part 'index' to reference the index.html or index.php which is the entry point to a website. In my case, this part of the interface is the entry point where you would import all necessary files.",
+  "co2interface-item-11": "So the index page looks like this. We have two options, either generating a list of collaborators or calculate the CO2 footprint. Let's talk first about the list of collaborators.",
+  "co2interface-item-12": "So first we choose the year since we're going to calculate the CO2 footprint based on an year. After choosing the year, we have multiple options. We can either just generate the list by clicking on the download button that will create an Excel file with the collaborators. In addition, the user can generate a list of collaborators by filtering them beforehand. There's also a button that resets those said filters.",
+  "co2interface-item-13": "Furthermore, there's a reason why the filters and the buttons look a little greyed out, it's to show that you cannot choose them before you choose the year.",
+  "co2interface-item-14": "Here we have the second part:",
+  "co2interface-item-15": "It's the same concept, you choose the year but this time you drag and drop (or click on the button) to manually insert the needed file. This is the only file that is needed to insert manually everytime.",
+  "co2interface-item-16": "There's around 7 to 9 necessary files for the calculation of the CO2 footprint which need to be verified beforehand. However, this part is yet to be finished since I didn't have the time to do so during my internship. As you might see, there's also no button to click to start the calculation process either.",
+  "co2interface-item-17": "Documenting your code is important not only for other people so that they know what your code does, but also for yourself. Since I don't have access to the code at the moment of writing, I can only provide an example on how I have documented my code (docstring).",
+  "co2interface-item-18": "Right above I'm showing an example on how I have documented my bode for Javascript and Python. These are just examples and if you search images on Google you'll find that people will write their docstring in different ways but those images represent pretty closely how I have documented my code.",
+  "co2interface-item-19": "A docstring consists firstly of writing a general phrase on what your code does followed by your arguments. Each argument that your function has must be written by their name and their type as well as what they represent inside the function. You can then write what the function returns as well as what it might throw as an error. Finally, you could also provide an example on how you would call the function and what it might return based on the values that you have given it."
 }
