@@ -13,6 +13,12 @@ section {
   overflow: hidden; /* Prevent child elements from expanding over the boundaries of the section*/
 }
 
+@media (max-width: 375px) {
+  section {
+    padding: 60px 0px;
+  }
+}
+
 .section-title { 
   padding-bottom: 15px;
 }

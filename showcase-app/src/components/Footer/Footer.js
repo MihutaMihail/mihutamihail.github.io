@@ -49,9 +49,9 @@ const Footer = () => {
 
             {/* DOWNLOAD CV */}
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4 id="download-cv" className="language-dependent">
+              <h5 id="download-cv" className="language-dependent">
                 Download CV
-              </h4>
+              </h5>
               <a
                 href="./pdf/CV_Alternance_Mihuta-Mihail.pdf"
                 className="btn btn-secondary"

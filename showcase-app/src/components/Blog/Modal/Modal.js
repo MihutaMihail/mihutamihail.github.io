@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import "./Modal.css"
 
 /**
  * Modal component displays a modal dialog with a header, body and footer.

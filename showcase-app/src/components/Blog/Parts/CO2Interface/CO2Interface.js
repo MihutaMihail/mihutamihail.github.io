@@ -22,7 +22,7 @@ const CO2Interface = () => {
 
   const fifthCarouselItems = [
     {
-      src: "https://miro.medium.com/v2/resize:fit:1200/1*1IT5garfJ_5LRAs5KNM2Cg.png",
+      src: "https://user-images.githubusercontent.com/847422/61704800-73907200-ad3c-11e9-8179-ea8fadf1cb91.png",
       caption: "Javascript",
     },
     {

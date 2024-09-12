@@ -4,6 +4,7 @@ import Modal from "./Modal/Modal";
 import Introduction from "./Parts/Introduction/Introduction";
 import PowerBI from "./Parts/PowerBI/PowerBI";
 import CO2Interface from "./Parts/CO2Interface/CO2Interface";
+import Conclusion from "./Parts/Conclusion/Conclusion";
 import { changeLanguage } from "../../js/changeLanguage";
 
 /**
@@ -64,6 +65,12 @@ const Blog = () => {
       title: "CO2 Interface",
       src: "./img/index.JPG",
       content: <CO2Interface />,
+    },
+    {
+      id: 4,
+      title: "Conclusion",
+      src: "https://consort-group.com/logo.png",
+      content: <Conclusion />,
     },
   ];
 
@@ -143,7 +150,7 @@ const Blog = () => {
                     <div className="card shadow">
                       {/* Card header with the card title */}
                       <div className="card-header mb-2 h6 text-center">
-                        {card.title}
+                        {card.id}. {card.title}
                       </div>
 
                       {/* Card image */}

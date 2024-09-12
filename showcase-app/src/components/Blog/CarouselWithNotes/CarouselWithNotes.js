@@ -25,7 +25,7 @@ import { Carousel } from "react-bootstrap";
  *
  * <CarouselWithNotes items={items} />
  *
- * This will render a carousel with three slides, each displaying an 
+ * This will render a carousel with three slides, each displaying an
  * image and a caption except for the third item.
  */
 const CarouselWithNotes = ({ items }) => {
@@ -34,7 +34,7 @@ const CarouselWithNotes = ({ items }) => {
       {items.map((item, index) => (
         <Carousel.Item key={index}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 card-img-bottom"
             src={item.src}
             alt={item.caption ? item.caption : `Slide ${index + 1}`}
           />

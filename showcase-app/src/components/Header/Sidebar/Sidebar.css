@@ -7,6 +7,13 @@
   border: none;
   cursor: pointer;
   margin-top: 3%;
+  z-index: 100;
+}
+
+@media (max-width: 375px) {
+  .open-arrow {
+    display: none;
+  }
 }
 
 .close-arrow {

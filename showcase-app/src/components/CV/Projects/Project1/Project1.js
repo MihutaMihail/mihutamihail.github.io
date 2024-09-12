@@ -39,7 +39,7 @@ const Project1 = () => {
               <a
                 id="github-repository"
                 href="https://github.com/MihutaMihail/Unity-v2021.3.16_Platformer"
-                className="btn btn-secondary m-1 language-dependent"
+                className="btn btn-secondary m-1 language-dependent download-cv"
                 target="_blank"
                 rel="noreferrer"
               >
