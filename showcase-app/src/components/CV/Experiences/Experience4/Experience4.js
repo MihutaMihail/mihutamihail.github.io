@@ -13,13 +13,27 @@ const Experience4 = () => {
         {/* END - CARD HEADER*/}
 
         <div className="card-body">
+          {/* BLOG LINK */}
+          <a
+            className="github-icon"
+            href="/blog"
+            rel="noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1187/1187595.png"
+              width="40"
+              alt="blog"
+            />
+          </a>
+          {/* END - BLOG LINK */}
+
           {/* TYPE OF PROJECT */}
           <p className="card-text">
             <strong
               className="type-project language-dependent"
               id="experience-4-title"
             >
-              Internship
+              Internship at Consort Group
             </strong>
           </p>
           {/* END - TYPE OF PROJECT */}
